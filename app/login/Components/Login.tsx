@@ -59,7 +59,7 @@ const Login = () => {
 
                     <div className="text-center mt-4 flex justify-center gap-1">
                         <MdOutlineHorizontalRule />
-                        <a href="#" className="text-black text-xs">Don't have an account? <span className='text-[#723EEB] ml-1'>Register</span></a>
+                        <a href="register" className="text-black text-xs">Don't have an account? <span className='text-[#723EEB] ml-1'>Register</span></a>
                         <MdOutlineHorizontalRule />
                     </div>
                 </div>

@@ -1,11 +1,13 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 
 
 
 const Login = () => {
+    const router = useRouter();
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePasswordVisibility = () => {
@@ -40,7 +42,8 @@ const Login = () => {
                             </div>
                         </div>
                         <div className="mb-4">
-                            <button className="w-full md:px-4 py-2.5 bg-[#723EEB] text-white text-xs rounded-3xl hover:bg-[#6129e6] duration-500">Login</button>
+                            <button onClick={() => router.push("/dashboard")}
+                                className="w-full md:px-4 py-2.5 bg-[#723EEB] text-white text-xs rounded-3xl hover:bg-[#6129e6] duration-500">Login</button>
                         </div>
                     </form>
                     <div className="flex flex-col items-center -mt-4">

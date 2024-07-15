@@ -1,11 +1,15 @@
+"use client"
 import dynamic from 'next/dynamic'
+import Wallet from './Wallet/Wallet'
+import TransactionChart from './TransactionChart/TransactionChart'
 const Layout = dynamic(() => import('@/app/layout/dasboardlayout'), { ssr: false, })
 
 const page = () => {
     return (
         <Layout>
             <div>
-                <h2>Welcome</h2>
+                <Wallet />
+                {/* <TransactionChart/> */}
             </div>
         </Layout>
     )

@@ -15,12 +15,14 @@ const SideBar = ({ isOpen }: IProps) => {
                         </div>
                         <div>
                             <ul className='text-base font-medium my-8'>
-                                <li className='flex items-center mb-6'>
-                                    <span className="bg-[#723EEB] p-2 rounded-full mr-2">
-                                        <img src="images/dashboard-icon.png" alt="Dashboard Icon" className="h-4 w-auto" />
-                                    </span>
-                                    <p>Dashboard</p>
-                                </li>
+                                <button className="w-full">
+                                    <li className='flex items-center mb-6 bg-[#E5E5EC] p-2 rounded-xl'>
+                                        <span className="bg-[#723EEB] p-2 rounded-full mr-2">
+                                            <img src="images/dashboard-icon.png" alt="Dashboard Icon" className="h-4 w-auto" />
+                                        </span>
+                                        <p>Dashboard</p>
+                                    </li>
+                                </button>
                                 <li className='flex items-center mb-6'>
                                     <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
                                         <img src="images/wallet-icon.png" alt="Wallet Icon" className="h-4 w-auto" />

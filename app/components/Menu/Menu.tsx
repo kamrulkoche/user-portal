@@ -16,7 +16,7 @@ const Menu = ({ handleSidebar }: IProps) => {
     return (
         <div>
             <button
-                className=" top-6 right-4 text-3xl  "
+                className=" top-6 right-4 text-3xl lg:hidden  "
                 onClick={handleButton}
             >
                 {isOpen ? <IoCloseCircleOutline /> : <FiMenu />}

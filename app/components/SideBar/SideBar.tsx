@@ -7,7 +7,7 @@ interface IProps {
 const SideBar = ({ isOpen }: IProps) => {
     return (
         <div className='relative lg:relative'>
-            <div className={`bg-white py-8 px-4 w-60 h-screen fixed lg:relative lg:block transition-transform duration-100 ${!isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+            <div className={`bg-white py-8 px-4 w-60 h-screen fixed lg:relative lg:block transition-transform duration-100 ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
                 <div className='h-full flex flex-col justify-between overflow-y-auto '>
                     <div>
                         <div className='flex justify-center'>

@@ -1,10 +1,13 @@
 import { ImHeadphones } from "react-icons/im";
+import SideBarNavLink from "../SideBarNavLink/SideBarNavLink";
+import { useState } from "react";
 
 interface IProps {
     isOpen: boolean;
 }
 
 const SideBar = ({ isOpen }: IProps) => {
+
     return (
         <>
             <div className='relative lg:relative'>
@@ -14,62 +17,90 @@ const SideBar = ({ isOpen }: IProps) => {
                             <div className='flex justify-center'>
                                 <img src="images/logo.png" alt="Logo" />
                             </div>
-                            <div>
-                                <ul className='text-base font-medium my-8'>
-
-                                    <button className="w-full">
-                                        <li className='flex items-center mb-6 bg-[#E5E5EC] p-2 rounded-xl'>
-                                            <span className="bg-[#723EEB] p-2 rounded-full mr-2">
-                                                <img src="images/dashboard-icon.png" alt="Dashboard Icon" className="h-4 w-auto" />
-                                            </span>
-                                            <p>Dashboard</p>
-                                        </li>
-                                    </button>
-
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/wallet-icon.png" alt="Wallet Icon" className="h-4 w-auto" />
-                                        </span>
-                                        <p>Wallet</p>
+                            <nav>
+                                <ul className='text-base font-medium my-8 ml-4'>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2 "
+                                            inactiveClasses=""
+                                            text="Dashboard"
+                                            href="/dashboard"
+                                            activeIcon="images/dashboard-icon.png"
+                                            inactiveIcon="images/dashboard-icon.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/send-money-icon.png" alt="Send Money Icon" className="h-4.5 w-auto" />
-                                        </span>
-                                        <p>Send Money</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="Wallet"
+                                            href="/wallet"
+                                            activeIcon="images/wallet-icon.png"
+                                            inactiveIcon="images/wallet-icon.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/transactions-icon.png" alt="Transactions Icon" className="h-4 w-auto" />
-                                        </span>
-                                        <p>Transactions</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="Send Money"
+                                            href="/send-money"
+                                            activeIcon="images/send-money-icon.png"
+                                            inactiveIcon="images/send-money-icon.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/recipients.png" alt="Recipients Icon" className="h-3 w-auto" />
-                                        </span>
-                                        <p>Recipients</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="Transactions"
+                                            href="/transactions"
+                                            activeIcon="images/transactions-icon.png"
+                                            inactiveIcon="images/transactions-icon.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/KYC.png" alt="KYC Icon" className="h-4.5 w-auto" />
-                                        </span>
-                                        <p>KYC</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="Recipients"
+                                            href="/recipients"
+                                            activeIcon="images/recipients.png"
+                                            inactiveIcon="images/recipients.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-6'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/security.png" alt="Security Icon" className="h-4.5 w-auto" />
-                                        </span>
-                                        <p>2FA Security</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="KYC"
+                                            href="/kyc"
+                                            activeIcon="images/KYC.png"
+                                            inactiveIcon="images/KYC.png"
+                                        />
                                     </li>
-                                    <li className='flex items-center mb-4'>
-                                        <span className="bg-[#EBE6FA] p-2 rounded-full mr-2">
-                                            <img src="images/logout.png" alt="Logout Icon" className="h-4.5 w-auto" />
-                                        </span>
-                                        <p>Logout</p>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="2FA Security"
+                                            href="/security"
+                                            activeIcon="images/security.png"
+                                            inactiveIcon="images/security.png"
+                                        />
+                                    </li>
+                                    <li className="mb-8">
+                                        <SideBarNavLink
+                                            activeClasses="bg-[#E5E5EC] p-2 rounded-xl -ml-2"
+                                            inactiveClasses=""
+                                            text="Logout"
+                                            href="/logout"
+                                            activeIcon="images/logout.png"
+                                            inactiveIcon="images/logout.png"
+                                        />
                                     </li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
                         <div>
                             <div className='h-48 bg-cover bg-center rounded-2xl' style={{ backgroundImage: "url('/images/help-center.png')" }}>

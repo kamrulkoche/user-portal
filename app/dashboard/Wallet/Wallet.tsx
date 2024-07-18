@@ -6,7 +6,7 @@ const Wallet = () => {
         <div>
             <div className=" lg:flex items-center grid justify-center ">
                 <div className=" w-full grid lg:flex justify-between gap-10 ">
-                    <div className="bg-gradient-to-r from-[#CD83FD] to-[#B37AFE]  text-white rounded-lg p-4 shadow-lg w-64 grid content-between">
+                    <div className="bg-gradient-to-r from-[#CD83FD] to-[#B37AFE]  text-white rounded-lg p-4 shadow-lg w-96 md:w-64 grid content-between">
                         <div>
                             <h2 className="text-base font-medium">My Wallet</h2>
                             <p className="mt-2 text-[10px] font-medium ">26 APR 2024</p>

@@ -1,6 +1,5 @@
 import { ImHeadphones } from "react-icons/im";
 import SideBarNavLink from "../SideBarNavLink/SideBarNavLink";
-import { useState } from "react";
 
 interface IProps {
     isOpen: boolean;

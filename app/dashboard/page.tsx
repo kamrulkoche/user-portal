@@ -1,11 +1,17 @@
+"use client"
 import dynamic from 'next/dynamic'
-const Layout = dynamic(() => import('@/app/layout/dasboardlayout'), { ssr: false, })
+import SendMoneyLog from './SendMoneyLog/SendMoneyLog'
+import TotalTransactionsChart from './TotalTransactionsChart/TotalTransactionsChart'
+import Wallet from './Wallet/Wallet'
+const Layout = dynamic(() => import('@/app/layout/dashboardlayout'), { ssr: false, })
 
 const page = () => {
     return (
         <Layout>
             <div>
-                <h2>Welcome</h2>
+                <Wallet />
+                <TotalTransactionsChart />
+                <SendMoneyLog/>
             </div>
         </Layout>
     )

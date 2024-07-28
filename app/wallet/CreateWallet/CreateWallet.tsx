@@ -10,7 +10,7 @@ const CreateWallet = () => {
 
   return (
     <div>
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-white p-4 rounded-lg shadow-md pb-10 sm:pb-10 ">
         <h2 className="text-base font-medium mb-4">Create New Wallet</h2>
         <form>
           <div className="mb-4">
@@ -71,7 +71,7 @@ const CreateWallet = () => {
           </div>
           <button
             type="submit"
-            className="bg-[#723EEB] hover:bg-[#5818ec] duration-500 text-white px-6 py-2 rounded-md w-full"
+            className="bg-[#723EEB] hover:bg-[#5818ec] duration-500 text-white px-6 py-2 rounded-md w-full mt-5"
           >
             Create Now
           </button>

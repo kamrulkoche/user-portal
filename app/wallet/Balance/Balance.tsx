@@ -1,4 +1,4 @@
-import { ClipboardCopyIcon, CheckIcon } from 'lucide-react'
+import { Copy, ClipboardCopyIcon, CheckIcon } from 'lucide-react'
 import React, { useState } from 'react'
 
 const Balance = () => {
@@ -10,19 +10,18 @@ const Balance = () => {
     };
     return (
         <div className="">
-            <div className=" bg-white rounded-2xl shadow-md pb-8">
-                <div className='p-6'>
-                    <div className="flex justify-between items-center mb-2">
+            <div className=" bg-white rounded-2xl shadow-md pb-8 -ml-4 sm:ml-0">
+                <div className='p-3 sm:p-6 '>
+                    <div className="flex justify-between items-center mb-2 mt-16 sm:mt-6  ">
                         <div className="flex items-center">
-                            <h1 className="text-base font-medium">Wallet ID : </h1>
-                            <div className="flex items-center ml-2 border border-gray-300 rounded-md px-2">
-                                <span className="mr-2 text-base font-medium">123548431554</span>
-                                <ClipboardCopyIcon className="h-5 w-5 text-[#723EEB] cursor-pointer" />
-
+                            <h1 className="text-base font-medium w-[4rem]">Wallet ID : </h1>
+                            <div className="flex items-center ml-2 border border-gray-300 rounded-md px-2"><span className=" text-base font-medium ">123548431554</span>
+                                <Copy className="h-7 w-7 text-[#723EEB] cursor-pointer border-l-2 ml-2 pl-2 " />
+                                <ClipboardCopyIcon className="h-7 w-7 text-[#723EEB] cursor-pointer border-l-2 ml-2 pl-2 " />
                             </div>
                         </div>
 
-                        <button className="text-[#723EEB] border border-[#723EEB] rounded-sm px-3 py-1 text-sm">
+                        <button className="text-[#723EEB] border border-[#723EEB] rounded-sm px-3 py-1 text-sm -ml-20 -mt-28 sm:mt-0 w-28 ">
                             Change PIN
                         </button>
                     </div>

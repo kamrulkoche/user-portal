@@ -14,7 +14,7 @@ const Balance = () => {
                 <div className='p-3 sm:p-6 '>
                     <div className="flex justify-between items-center mb-2 mt-16 sm:mt-6  ">
                         <div className="flex items-center">
-                            <h1 className="text-base font-medium w-[4rem]">Wallet ID : </h1>
+                            <h1 className="text-base font-medium w-[5rem]">Wallet ID : </h1>
                             <div className="flex items-center ml-2 border border-gray-300 rounded-md px-2"><span className=" text-base font-medium ">123548431554</span>
                                 <Copy className="h-7 w-7 text-[#723EEB] cursor-pointer border-l-2 ml-2 pl-2 " />
                                 <ClipboardCopyIcon className="h-7 w-7 text-[#723EEB] cursor-pointer border-l-2 ml-2 pl-2 " />

@@ -10,7 +10,7 @@ const CreateWallet = () => {
 
   return (
     <div>
-      <div className="bg-white p-4 rounded-lg shadow-md pb-10 sm:pb-10 ">
+      <div className="bg-white p-4 rounded-lg shadow-md pb-10 sm:pb-10 -ml-4 sm:ml-0">
         <h2 className="text-base font-medium mb-4">Create New Wallet</h2>
         <form>
           <div className="mb-4">

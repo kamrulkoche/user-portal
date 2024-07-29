@@ -19,6 +19,7 @@ const page = () => {
                     <button className='text-white text-base font-bold py-2 px-5 bg-[#723EEB] hover:bg-[#5e21ee] duration-500 rounded-3xl '>View More</button>
                 </div>
             </div>
+            
         </Layout>
     )
 }

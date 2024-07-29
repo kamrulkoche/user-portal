@@ -16,7 +16,7 @@ const Login = () => {
 
     return (
         <div className='pb-36'>
-            <div className="grid  md:grid-cols-2 gap-5">
+            <div className="grid  md:grid-cols-2 gap-6">
                 <div className="">
                     <img src="images/login img1.png" alt="User on laptop" className="" />
                 </div>
